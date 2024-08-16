@@ -93,6 +93,52 @@
     }
   },
 
+"notes": {
+  "description": "These are some notes that I have taken during my university years. They are not complete and may contain errors.",
+  "second_year": [
+    {
+      "title": "PCS214 - Solid State Physics - Semiconductor part",
+      "link": "https://drive.google.com/file/d/1vN0H8alD9a2-PC_xSBeDcgwH3t-ZF45T/view?usp=sharing"
+    },
+    {
+      "title": "PCS24 - Solid State Physics - Mosfet",
+      "link": "https://drive.google.com/file/d/1551N0jE88EX7e7RRZL7rXMSFJw21PDGX/view?usp=sharing"
+    },
+    {
+      "title": "MTH312 - Discrete Maths - Midterm notes",
+      "link": "https://drive.google.com/file/d/129mWr3AgcmtNRKFASav1MYNgK7x1dgl5/view?usp=sharing"
+    },
+    {
+      "title": "MTH312- Discrete Maths - Final notes",
+      "link": "https://drive.google.com/file/d/1S7lAALo2QwE0fD73UDuVBLQ-nj0-0icF/view?usp=sharing"
+    },
+    {
+      "title": "MTH312 - Discrete Maths - Course notes (incompleted)",
+      "link": "https://drive.google.com/file/d/1ZgWRX-KsaVOZSeH0YlEevHSTwsuhZAL4/view?usp=sharing"
+    },
+    {
+      "title": "ELE404 - ELectronic Circuit I - BJT Equivalent Circuit and Amplifier Configs",
+      "link": "https://drive.google.com/file/d/1EIMcuieEDUGWEV-f_OOxM-qN3rLDoYCF/view?usp=sharing"
+    },
+    {
+      "title": "ELE404 - ELectronic Circuit I - Final notes",
+      "link": "https://drive.google.com/file/d/1x4lDZLB-ymXu-ohQwn6Tb7F4Njt6Txuy/view?usp=sharing"
+    },
+    {
+      "title": "ELE404 - ELectronic Circuit I - Course notes (incompleted)",
+      "link": "https://drive.google.com/file/d/14zxeknt1oqOZ1-dtkLkB6RlqFtA6_pK-/view?usp=sharing"
+    },
+    {
+      "title": "COE528 - Sofware Design - Course notes (incompleted)",
+      "link": "https://drive.google.com/file/d/1kkKs-GcHGYChxcniudsDUZSSNEWHZYlo/view?usp=sharing"
+    },
+    {
+      "title": "COE428 - Algorithm and Data Structure - Course notes (incompleted)",
+      "link": "https://drive.google.com/file/d/1BRdD2HflZju0UF5U4FO_CMwxyoJTSyGS/view?usp=sharing"
+    }
+  ]
+},
+
 
 
   "profile": {

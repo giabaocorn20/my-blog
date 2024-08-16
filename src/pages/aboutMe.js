@@ -30,7 +30,7 @@ const AboutMe = ({ data, location }) => {
           decision process, but the future discount factor in the equation might be small and I would often be trapped
           in local optimum.</p>
         <figure>
-          <img src="https://th.bing.com/th/id/OIG.5OCwHMuXihvBT4.Gjwd_?pid=ImgGn" alt="Cute Image" />
+          <img src="https://wallpapercave.com/wp/wp3063142.jpg" alt="Cute Image" />
           <figcaption style={{ textAlign: "center", color: "#888" }}>My most favourite dish</figcaption>
         </figure>
         <h2>About This Site</h2>

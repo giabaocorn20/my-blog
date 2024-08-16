@@ -1,0 +1,69 @@
+---
+title: Making a Drone less than 300 dollars
+description: A guide to making a drone for less than 300 dollars. This guide will help you build a drone from scratch and save money.
+date: "2024-06-20"
+category: "DIY"
+tags: [ "project", "drone", "DIY", "engineering", "electronics"]
+featuredImage: "./dji-fpv-drone.jpeg"
+pinned: true
+---
+
+Hello everyone! Today I am going to show you how to make a drone for less than 300 dollars. This guide will help you build a drone from scratch and save money. Let's get started!
+
+## Materials Needed
+
+Generally, when you are building a drone, you will need the following components:
+| Component          | Description | Link |
+|--------------------|-------------|------|
+| Flight Controller (FC) | Diatone Mamba MK4 F405 MINI DJI Port Support F30MINI 30A/40A ESC Flight Controller Stack/Power Tower F4 FC for FPV Drone | [Link](https://www.aliexpress.com/item/4001339644069.html?spm=a2g0o.productlist.main.5.33d9lyGflyGfEp&algo_pvid=f5c3c3ce-2447-4a47-84d5-f5877f7a7987&algo_exp_id=f5c3c3ce-2447-4a47-84d5-f5877f7a7987-2&pdp_npi=4%40dis%21CAD%21155.64%21116.73%21%21%21110.91%2183.18%21%402101e63417187727772575809e4254%2112000029067946318%21sea%21CA%212879913768%21&curPageLogUid=hThtFpHYB0AN&utparam-url=scene%3Asearch%7Cquery_from%3A) |
+| ESCs               | Diatone Mamba MK4 F405 MINI DJI Port Support F30MINI 30A/40A ESC Flight Controller Stack/Power Tower F4 FC for FPV Drone | [Link](https://www.aliexpress.com/item/4001339644069.html?spm=a2g0o.productlist.main.5.33d9lyGflyGfEp&algo_pvid=f5c3c3ce-2447-4a47-84d5-f5877f7a7987&algo_exp_id=f5c3c3ce-2447-4a47-84d5-f5877f7a7987-2&pdp_npi=4%40dis%21CAD%21155.64%21116.73%21%21%21110.91%2183.18%21%402101e63417187727772575809e4254%2112000029067946318%21sea%21CA%212879913768%21&curPageLogUid=hThtFpHYB0AN&utparam-url=scene%3Asearch%7Cquery_from%3A) |
+| Motors             | 1/2/4PCS iFlight XING E Pro 2207 1800KV 6S /2450KV 2750KV 4S Brushless Motor for FPV RC Multicopter Racing Drone Parts DIY PARTS | [Link](https://www.aliexpress.com/item/1005005269347023.html?spm=a2g0o.productlist.main.3.6cd733feVGYg9C&algo_pvid=85dbdce5-d9fe-4d42-920e-fbcab23b0b2a&algo_exp_id=85dbdce5-d9fe-4d42-920e-fbcab23b0b2a-1&pdp_npi=4%40dis%21CAD%21166.70%2176.68%21%21%21863.30%21397.12%21%40210318ec17187738779692849eb02d%2112000032427278530%21sea%21CA%212879913768%21&curPageLogUid=MVBUDXgnBCKR&utparam-url=scene%3Asearch%7Cquery_from%3A) |
+| Camera             | Caddx Ratel 2 V2 FPV Camera Ratel2 2.1mm Lens 16:9/4:3 NTSC/PAL Switchable 19*19mm Super WDR for FPV Racing Drone RC Model | [Link](https://www.aliexpress.com/item/1005006056124972.html?spm=a2g0o.productlist.main.7.75f0345c7wFnfw&algo_pvid=b040b2da-a19c-4585-9419-a08dd0737e9f&aem_p4p_detail=2024061822151610670425033714600002136704&algo_exp_id=b040b2da-a19c-4585-9419-a08dd0737e9f-3&pdp_npi=4%40dis%21CAD%21107.59%2132.28%21%21%21557.16%21167.15%21%402103297517187741166037036e5f87%2112000035526907526%21sea%21CA%212879913768%21&curPageLogUid=426EgCnhuqWa&utparam-url=scene%3Asearch%7Cquery_from%3A&search_p4p_id=2024061822151610670425033714600002136704_1) |
+| VTx                | AKK Race FPV VTX, the most affordable 25mW/200mW switchable VTX, support OSD/Pitmode/Smart Audio | [Link](https://www.akktek.com/akk-race-vtx.html) |
+| Antenna            | FOXEER Pagoda PRO 150mm 5.8GHz 3dBi Omni FPV Antenna RHCP SMA for RC Freestyle FPV Racing Drone VTX Goggles DIY Parts | [Link](https://www.aliexpress.com/item/1005006383358836.html?spm=a2g0o.detail.pcDetailTopMoreOtherSeller.1.6586tWfFtWfFiB&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40000.327270.0&scm_id=1007.40000.327270.0&scm-url=1007.40000.327270.0&pvid=663e23b0-cdbb-451c-b3c5-e3347ad02d94&_t=gps-id:pcDetailTopMoreOtherSeller,scm-url:1007.40000.327270.0,pvid:663e23b0-cdbb-451c-b3c5-e3347ad02d94,tpp_buckets:668%232846%238109%231935&pdp_npi=4%40dis%21CAD%2144.61%2112.49%21%21%21231.02%2164.69%21%402101ef6817187789329585527e22e3%2112000036974899108%21rec%21CA%212879913768%21&utparam-url=scene%3ApcDetailTopMoreOtherSeller%7Cquery_from%3A&search_p4p_id=202406182335330012262080156057126555_0) |
+| Props              | HQ V1S Props or Gemfan Hulkie or Gemfan Flash | - |
+
+For the frame, you can use the [iFlight Nazgul5 V2](https://www.aliexpress.com) or the [iFlight XL5 V5](https://www.aliexpress.com). Both are great frames for building a drone.
+
+I personally designed and 3D printed a frame for my drone. You can design your own frame using [Tinkercad](https://www.tinkercad.com) or [Fusion 360](https://www.autodesk.com/products/fusion-360/overview).
+or you can download this frame of mine from [Thingiverse](https://www.thingiverse.com/thing:4940737).
+
+The flight controller and ESCs are typically sold together as a stack to save space, though you can also purchase four separate ESCs. These components can be found on websites like [AliExpress](https://www.aliexpress.com) or [Banggood](https://www.banggood.com/?last_spm=1a981.detailpage.0001393377.00012138278.8f46d746acc349c79306e6a94f00fd6b). Motors, cameras, VTx, antennas, and props are also available on these sites.
+
+- **Flight Controller**: The brain of the drone, it manages the motors and other components.
+- **ESCs (Electronic Speed Controllers)**: Regulate the speed of the motors.
+- **Motors**: Provide the necessary power to lift the drone off the ground.
+- **Camera**: Allows you to see where the drone is heading.
+- **VTx (Video Transmitter)**: Sends the video signal to your goggles or monitor.
+- **Antenna**: Receives the video signal.
+- **Props (Propellers)**: Generate the thrust needed to move the drone.
+
+## Assembly
+
+1. **Frame**: Start by assembling the frame. Attach the arms to the main body of the frame using screws. Make sure the arms are properly aligned and secure.
+
+2. **Motors**: Attach the motors to the arms of the frame using screws. Make sure the motors are facing the correct direction and are securely fastened.
+
+3. **Flight Controller**: Mount the flight controller on the main body of the frame using screws. Connect the ESCs to the flight controller according to the wiring diagram provided with the components.
+
+4. **ESCs**: Attach the ESCs to the arms of the frame using double-sided tape or zip ties. Connect the ESCs to the motors and the flight controller.
+
+5. **Camera**: Mount the camera on the front of the frame using the provided bracket. Connect the camera to the VTx using the provided cable.
+
+6. **VTx**: Mount the VTx on the top of the frame using double-sided tape or zip ties. Connect the VTx to the flight controller and the camera.
+
+7. **Antenna**: Attach the antenna to the VTx using the provided connector. Make sure the antenna is securely fastened and pointing up.
+
+8. **Props**: Attach the props to the motors according to the rotation direction indicated on the props. Make sure the props are securely fastened and balanced.
+
+9. **Battery**: Connect the battery to the drone using a battery strap. Make sure the battery is securely fastened and balanced.
+
+## Configuration
+
+Once you have assembled the drone, you will need to configure the flight controller using Betaflight or another software. Follow the instructions provided with the flight controller to set up the drone for your specific needs.
+
+The Flight Controller Software we are using is Betaflight. You can download it from [here](https://betaflight.com/)
+
+New Update for this article: I will continue writing when i have time. Stay tuned!
+
+
